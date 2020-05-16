@@ -7,4 +7,17 @@ ROS2 Dashing Diademata
 Ubuntu 18.04  
 
 ## インストール方法
-T.B.D
+ROS2のワークスペースにcloneしてbuildすることで使用できます。
+
+```
+$ mkdir -p ~/ros2_ws/src
+$ cd ~/ros2_ws/src
+~/ros2_ws/src$ git clone https://github.com/nomumu/m5stack_msgs.git
+~/ros2_ws/src$ cd ..
+~/ros2_ws$ colcon build
+　〜ビルド成功した後〜
+~/ros2_ws$ source install/setup.bash
+```
+
+## 使用方法
+このメッセージを使用するコードが[公開](https://github.com/nomumu/m5stack_example)されていますのでそちらを確認して下さい。
